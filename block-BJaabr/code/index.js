@@ -54,6 +54,7 @@ Do the following with above problem.
 
 // - What is the typeof returnValue
 
+
 /* 2. Subtract one
 
 Write a function named `substractOne` that accepts a number, substracts one from the given value and return it. (hint: use return keyword)
@@ -84,17 +85,33 @@ Do the following with above problem.
 
 // - Write a Function Declaration
 
+function sum(num1, num2) {
+  return num1 + num2;
+}
 // - Write a Function Expression
 
+let sum = function (num1, num2) {
+  return num1 + num2;
+};
 // - Write an Arrow Function without curly brackets(if possible)
+let sum = (num1, num2) => num1 + num2;
 
 // - Write an Arrow Function with curly brackets
 
+
+let sum = (num1, num2) => {
+  return num1 + num2;
+};
 // - Execute the function
+sum(12, 12);
 
 // - Execute the function and store the return value in a variable
 
+let returnValue = sum(23, 24);
+
 // - What is the typeof returnValue
+//  the type of retrn value is number
+
 
 /* 4. Square of the given value
 
@@ -104,18 +121,32 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function square(num) {
+  return num * num;
+}
 
 // - Write a Function Expression
+let sqaure = function (num) {
+  return num * num;
+};
 
 // - Write an Arrow Function without curly brackets(if possible)
+let square = (num) => num * num;
 
 // - Write an Arrow Function with curly brackets
+let square = (num) => {
+  return num * num;
+};
 
 // - Execute the function
+square(10, 7);
 
 // - Execute the function and store the return value in a variable
+let returnValue = square(12, 14);
 
 // - What is the typeof returnValue
+//  the type of retrn value is number
+
 
 /* 5. Find isGreater
 
@@ -149,12 +180,28 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function oddOrEven(number){
+  if(number%2===0){
+    return (`${number} is odd`)
+  }else {
+    return (`${number} is even`)
+  }
+}
 
 // - Write an anonymous Function Expression
+let oddOrEven = function(number){
+  if(number%2===0){
+    return (`${number} is odd`)
+  }else {
+    return (`${number} is even`)
+  }
+}
 
 // - Write an named Function Expression
 
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
+ 
+let oddOrEven = (number%2===0) ? return (`${number} is odd`) :  return (`${number} is even`)
 
 // - Write an Arrow Function with curly brackets
 
